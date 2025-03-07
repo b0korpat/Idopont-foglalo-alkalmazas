@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import {useidopontStore} from "@/stores/idopont.js";
 
 const idopontStore = useidopontStore()

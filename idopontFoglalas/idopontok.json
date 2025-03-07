@@ -1,60 +1,25 @@
 {
   "orvos": [
     {
-      "id": 1,
-      "nev": "Jani",
-      "telszam": "06301234567",
+      "id": "3470",
+      "nev": "Kis Pista",
+      "telszam": "+36301234567",
       "nap": "Hétfő",
-      "ora": "10:00"
-    },
-    {
-      "id": "9025",
-      "nev": "asd",
-      "telszam": "123123",
-      "nap": "Szerda",
-      "ora": "13:00"
-    },
-    {
-      "id": "d824",
-      "nev": "3123",
-      "telszam": "1233",
-      "nap": "Szerda",
-      "ora": "9:00"
-    },
-    {
-      "id": "2fef",
-      "nev": "eqwe",
-      "telszam": "123123",
-      "nap": "Csütörtök",
-      "ora": "16:00"
-    },
-    {
-      "id": "e3eb",
-      "nev": "asd",
-      "telszam": "asdd",
-      "nap": "Szerda",
-      "ora": "16:00"
-    },
-    {
-      "id": "1239",
-      "nev": "dasd",
-      "telszam": "3123",
-      "nap": "Csütörtök",
-      "ora": "11:00"
-    },
-    {
-      "id": "d5e6",
-      "nev": "dasd",
-      "telszam": "asdasd",
-      "nap": "Péntek",
       "ora": "8:00"
     },
     {
-      "id": "f2cc",
-      "nev": "dasd",
-      "telszam": "312313",
-      "nap": "Kedd",
-      "ora": "16:00"
+      "id": "a03d",
+      "nev": "Nagy János",
+      "telszam": "+36307894561",
+      "nap": "Csütörtök",
+      "ora": "12:00"
+    },
+    {
+      "id": "3159",
+      "nev": "Közepes Misi",
+      "telszam": "+36302581478",
+      "nap": "Péntek",
+      "ora": "13:00"
     }
   ]
 }
