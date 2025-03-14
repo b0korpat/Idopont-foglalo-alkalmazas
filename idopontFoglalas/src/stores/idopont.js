@@ -24,10 +24,30 @@ export const useidopontStore = defineStore('idopont', () => {
         ora
       }),
     })
-    idopontok.value = await response.json()
+    const newAppointment = await response.json()
+    idopontok.value.push(newAppointment)
   }
 
+  const removeIdopont = async (name, phone, dayHour) => {
+    const [nap, ora] = dayHour.split(' ')
+    const response = await fetch('http://localhost:3000/orvos', {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        nev: name,
+        telszam: phone,
+        nap,
+        ora
+      }),
+    })
+    if (response.ok) {
+      idopontok.value = idopontok.value.filter(
+          idopont => !(idopont.nev === name && idopont.telszam === phone && idopont.nap === nap && idopont.ora === ora)
+      )
+    }
+  }
 
-
-  return { idopontok, getIdopontok, bookIdopont }
+  return { idopontok, getIdopontok, bookIdopont, removeIdopont }
 })

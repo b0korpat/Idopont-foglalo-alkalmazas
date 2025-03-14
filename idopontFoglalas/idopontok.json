@@ -20,6 +20,20 @@
       "telszam": "+36302581478",
       "nap": "Péntek",
       "ora": "13:00"
+    },
+    {
+      "id": "48db",
+      "nev": "Ács Lajos",
+      "telszam": "+36302587777",
+      "nap": "Hétfő",
+      "ora": "15:00"
+    },
+    {
+      "id": "b4cc",
+      "nev": "Teszt Elek",
+      "telszam": "+36301234567",
+      "nap": "Hétfő",
+      "ora": "10:00"
     }
   ]
 }

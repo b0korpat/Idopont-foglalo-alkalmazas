@@ -25,4 +25,22 @@ describe('IdopontPage', () => {
         expect(idopont.idopontok.length).toBeGreaterThan(0)
     })
 
+    it('időpont foglalása', async () => {
+        const idopont = useidopontStore()
+        await idopont.bookIdopont('Teszt Elek', '+36301234567', 'Hétfő 10:00')
+        expect(idopont.idopontok.length).toBeGreaterThan(0)
+        expect(idopont.idopontok).toEqual(
+            expect.arrayContaining([
+                expect.objectContaining({
+                    nev: 'Teszt Elek',
+                    telszam: '+36301234567',
+                    nap: 'Hétfő',
+                    ora: '10:00'
+                })
+            ])
+        )
+        // Cleanup: remove the test data
+        await idopont.removeIdopont('Teszt Elek', '+36301234567', 'Hétfő 10:00')
+    })
+
 })
